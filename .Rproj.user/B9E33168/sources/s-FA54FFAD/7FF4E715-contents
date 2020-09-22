@@ -1,0 +1,61 @@
+# Collecting the Data 
+
+#Admnistrative - Health Deficiences
+#search for a deficiency number in Deficiency_ dataset
+#MDS Quality Measures
+
+
+#number, name, date, Deficiency number, Deficiency Description, corrected, severity code
+
+library(dplyr)
+library(ggplot2)
+
+Deficiency_1 <- Health_Deficiencies %>% 
+  select(Federal.Provider.Number,Provider.Name,Survey.Date,Deficiency.Tag.Number,Deficiency.Category,Deficiency.Description,Deficiency.Corrected,Scope.Severity.Code,Correction.Date)
+
+# grouping deficiency category
+p <- Deficiency_1 %>% group_by(Deficiency.Category) %>% summarise(number = n())
+p <- data.frame(p)
+p
+#charting deficiency categories
+charting_categories<-ggplot(p, aes(x=Deficiency.Category, y=number, fill = Deficiency.Category)) +
+  geom_bar(stat="identity")+ theme(axis.text.x = element_text(angle = 15))
+charting_categories
+
+# Key Opportunities in Health IT : Source Wikipedia
+#health monitoring and diagnosis
+#medical treatment and patient care
+#pharmaceutical research and development
+#clinic performance optimization[29]
+
+#Types of Technology
+#electronic medical records (EMR) 
+#clinical decision support (CDS)
+#computerized physician order entry (CPOE).
+#They further defined applications for dispensing to include bar-coding at medication dispensing (BarD) 
+#robot for medication dispensing (ROBOT)
+#automated dispensing machines (ADM)
+#electronic medication administration records (eMAR) (Administrative)
+#bar-coding at medication administration (BarA or BCMA).
+
+#Text Analysis of Quality of Life and Care
+# clinical Decision Support can be linked to Quality of life and care
+# comments like disposing garbage indicates proper dispensal methods like robotics
+
+text_quality <- Deficiency_1 %>% select(Deficiency.Description)
+head(text_quality)
+
+#Takeaway comments: Implement a program that monitors antibiotic use
+
+# Install
+install.packages("tm")  # for text mining
+install.packages("SnowballC") # for text stemming
+install.packages("wordcloud") # word-cloud generator 
+install.packages("RColorBrewer") # color palettes
+# Load
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+
+docs <- Corpus(VectorSource(text_quality))

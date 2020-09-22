@@ -1,0 +1,66 @@
+library(ggplot2)
+library(dplyr)
+library(statsr)
+
+library(MASS)
+
+survey
+survey$Smoke
+  survey$Exer
+t <- table(survey$Sex, survey$Exer)  
+chisq.test(t) 
+t
+
+gss
+gss$year
+
+before_2000 <- gss %>% filter(year<2000) %>% filter(wrkstat == "Unempl, Laid Off" | wrkstat == "Working Fulltime" | wrkstat == "Working Parttime") 
+after_2000 <- gss %>% filter(year>=2000)
+
+before_1995 %>% filter(gss$wrkstat== "Laid Off")
+dummy <-table(before_2000$race, before_2000$wrkstat)
+dummy
+chisq.test(table_for_inference_before_2000)
+
+inference(y = wrkstat, data = after_1995, statistic = "proportion", type = "ci", method = "theoretical", success = "atheist")
+
+#EDA 
+
+# distribution before 2000
+
+ggplot(before_2000, 
+       aes(x = wrkstat, 
+           fill = race)) + 
+  geom_bar(position = "stack")
+
+#table before 2000
+table_for_inference_before_2000
+
+#Table after 2000
+table_for_inference_after_2000
+
+table_for_inference_before_2000 <- table(before_2000$race, before_2000$wrkstat)
+table_for_inference_after_2000 <- table(after_2000$race, after_2000$wrkstat)
+
+after_2000$wrkstat <-  as.factor(after_2000$wrkstat)
+
+Unemployed_after_2000 <- after_2000 %>% filter(wrkstat == "Unempl, Laid Off") %>% select(race,wrkstat) %>% filter(race!="Other")
+
+#proportion of black people lost job
+
+sum(Unemployed_after_2000$race=="White")/length(Unemployed_after_2000$race)
+
+inference(y = race, data = Unemployed_after_2000, statistic = "proportion", type = "ci", method = "theoretical", success = "Black")
+
+Unemployed_after_2000$race <-  as.factor(Unemployed_after_2000$race)
+
+table(Unemployed_after_2000$race, Unemployed_after_2000$wrkstat)  
+
+B_2000 <- subset(gss, wrkstat == "Unempl, Laid Off" | wrkstat == "Working Fulltime" | wrkstat == "Working Parttime")
+
+table(B_2000$race, B_2000$wrkstat)  
+chisq.test(t) 
+
+
+
+proportion_laid_off_black_2000 <- 

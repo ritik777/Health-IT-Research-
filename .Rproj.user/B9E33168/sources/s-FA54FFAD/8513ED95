@@ -1,0 +1,32 @@
+{
+    "id": "8513ED95",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599788362225.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "expression": "Covid_Nursing_Home",
+        "caption": "Covid_Nursing_Home",
+        "totalObservations": "199781",
+        "displayedObservations": "199781",
+        "variables": "87",
+        "cacheKey": "B23E7F79",
+        "object": "Covid_Nursing_Home",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Covid_Nursing_Home&cache_key=B23E7F79&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 0,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599788362225,
+    "read_only": false,
+    "read_only_alternatives": []
+}

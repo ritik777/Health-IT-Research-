@@ -1,0 +1,32 @@
+{
+    "id": "DFB2C2A5",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600649394551.0,
+    "source_on_save": false,
+    "relative_order": 13,
+    "properties": {
+        "expression": "Administrative_deficient_Nursing_homes",
+        "caption": "Administrative_deficient_Nursing_homes",
+        "totalObservations": "13163",
+        "displayedObservations": "13163",
+        "variables": "9",
+        "cacheKey": "AF747523",
+        "object": "Administrative_deficient_Nursing_homes",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Administrative_deficient_Nursing_homes&cache_key=AF747523&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7017490165949018682,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600649394551,
+    "read_only": false,
+    "read_only_alternatives": []
+}

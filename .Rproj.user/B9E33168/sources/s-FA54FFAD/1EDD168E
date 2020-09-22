@@ -1,0 +1,32 @@
+{
+    "id": "1EDD168E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600650395046.0,
+    "source_on_save": false,
+    "relative_order": 15,
+    "properties": {
+        "expression": "deaths_where_administratative_deficient",
+        "caption": "deaths_where_administratative_deficient",
+        "totalObservations": "1464",
+        "displayedObservations": "1464",
+        "variables": "12",
+        "cacheKey": "A35E8EC0",
+        "object": "deaths_where_administratative_deficient",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=deaths_where_administratative_deficient&cache_key=A35E8EC0&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7017490165949018426,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600650395046,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,32 @@
+{
+    "id": "9EA40A82",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600644342712.0,
+    "source_on_save": false,
+    "relative_order": 12,
+    "properties": {
+        "expression": "Deficiency_1",
+        "caption": "Deficiency_1",
+        "totalObservations": "367454",
+        "displayedObservations": "367454",
+        "variables": "9",
+        "cacheKey": "1F3F58CC",
+        "object": "Deficiency_1",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Deficiency_1&cache_key=1F3F58CC&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 8244250809393618988,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600644342712,
+    "read_only": false,
+    "read_only_alternatives": []
+}

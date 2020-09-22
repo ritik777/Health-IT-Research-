@@ -1,0 +1,32 @@
+{
+    "id": "B12AE58D",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599792340522.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "expression": "death_20",
+        "caption": "death_20",
+        "totalObservations": "5566",
+        "displayedObservations": "5566",
+        "variables": "87",
+        "cacheKey": "3CA5D0D2",
+        "object": "death_20",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=death_20&cache_key=3CA5D0D2&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1599791792,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599792340522,
+    "read_only": false,
+    "read_only_alternatives": []
+}

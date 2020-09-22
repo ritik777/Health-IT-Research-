@@ -1,0 +1,25 @@
+{
+    "id": "096B7439",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600643342323.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "id": "7ccd311c630e49c2acbd12ceae2100cc",
+        "name": "docs",
+        "title": "docs"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7813855478486819186,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600643342323,
+    "read_only": false,
+    "read_only_alternatives": []
+}
